@@ -1,0 +1,27 @@
+{
+  "name": "Tab Thing",
+  "description": "Build an Extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "TabBackGround.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting", "notifications", "tabs"],
+  "commands":
+	{
+		"toggle" : 
+		{
+			"suggested_key": {
+				"default": "Alt+A",
+				"mac": "Command+Shift+Y" 
+			},
+			"description" : "Display Id and URL of the current open/active tab."
+		}
+	},
+  "icons": {
+    "16": "/images/get_started16.png",
+    "32": "/images/get_started32.png",
+    "48": "/images/get_started48.png",
+    "128": "/images/get_started128.png"
+  }
+}
